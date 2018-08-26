@@ -17,6 +17,7 @@ public class ConsolaConvertirArabigosEnRomanos {
 		System.out.println ("CONVERTIR ARABIGOS A ROMANOS");
 		System.out.println ("RANGO 1-3999");
 		System.out.println ("=======================================");
+		System.out.println ("==Escriba exit para terminar ejecucion==");
 		System.out.println ("=======================================");
         
         String entradaTeclado = "";

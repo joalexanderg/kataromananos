@@ -1,6 +1,8 @@
 package unitarias;
 
 import static org.junit.Assert.assertArrayEquals;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 import dominio.Romano;
@@ -81,5 +83,49 @@ public class PruebasRomano {
 		
 		assertArrayEquals(unidadesEnRomanoEsperada,unidadesEnRomanoDevuelta);
 	
+	}
+	
+	@Test
+	public void pruebaEsNumeroArabigo(){
+		//arrange
+			String[] entrada = BaseRomano.ARREGLO_ARABIGOS;
+			boolean[] valorEsperado = {true,true,true};
+			boolean[] valorDevuelto = new boolean[3];
+			Romano romano = Romano.crearRomano();
+			
+		//act
+			for(int i=0; i< entrada.length;i++){
+				valorDevuelto[i] = romano.esNumeroArabigo(entrada[i]); 
+			}
+		//assert
+			assertArrayEquals(valorEsperado,valorDevuelto);
+	}
+	@Test
+	public void pruebaEsNumeroArabigoConCaracteres(){
+		//arrange
+			String[] entrada = BaseRomano.ARREGLO_CARACTERES;
+			boolean[] valorEsperado = {false,false,false};
+			boolean[] valorDevuelto = new boolean[3];
+			Romano romano = Romano.crearRomano();
+			
+		//act
+			for(int i=0; i< entrada.length;i++){
+				valorDevuelto[i] = romano.esNumeroArabigo(entrada[i]); 
+			}
+		//assert
+			assertArrayEquals(valorEsperado,valorDevuelto);
+	}
+	@Test
+	public void pruebaConstruirUnidadDeMilEnRomanosFueraDeRango(){
+		//arrange
+		int unidadesDeMil=4;
+		String valorEsperado = "Numero ingresado fuera de rango";
+		String numeroRomanoDevuelto = "";		
+		
+		//act
+		numeroRomanoDevuelto = Romano.construirUnidadDeMilEnRomanos(unidadesDeMil);
+		
+		//assert
+		assertEquals(valorEsperado,numeroRomanoDevuelto);
 	}
 }

@@ -188,7 +188,7 @@ public class  Romano implements ServiciosConversionArabigosARomanos{
 			unidadDeMilRomana = "MMM";
 			break;
 			
-		default: unidadDeMilRomana	= "ERROR: Fuera de rango";
+		default: unidadDeMilRomana	= BaseRomano.MENSAJE_ERROR_FUERA_DE_RANGO;
 		}
 		
 		return unidadDeMilRomana;
