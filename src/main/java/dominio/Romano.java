@@ -2,14 +2,14 @@ package dominio;
 
 import utilidades.BaseRomano;
 
-public class  Romano implements ServiciosConversionArabigosARomanos{
+public class  Romano implements ConversionArabigo{
 	
 	
 	public Romano() {
 		super();
 	}
 
-	public String convertirArabigosEnRomanos(int numeroArabigo) {
+	public String convertirArabigo(int numeroArabigo) {
 		String numeroRomanoCreado = "";
 		boolean control = true;
 		

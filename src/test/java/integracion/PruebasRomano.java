@@ -16,7 +16,7 @@ public class PruebasRomano {
 		String numeroRomanoDevuelto = "";
 		Romano romano = Romano.crearRomano();
 		//act
-		numeroRomanoDevuelto = romano.convertirArabigosEnRomanos(numeroArabigo);
+		numeroRomanoDevuelto = romano.convertirArabigo(numeroArabigo);
 		//assert
 		assertEquals(numeroRomanoEsperado,numeroRomanoDevuelto);
 	}
@@ -29,7 +29,7 @@ public class PruebasRomano {
 		String numeroRomanoDevuelto = "";
 		Romano romano = Romano.crearRomano();
 		//act
-		numeroRomanoDevuelto = romano.convertirArabigosEnRomanos(numeroArabigo);
+		numeroRomanoDevuelto = romano.convertirArabigo(numeroArabigo);
 		//assert
 		assertEquals(numeroRomanoEsperado,numeroRomanoDevuelto);
 	}
@@ -42,7 +42,7 @@ public class PruebasRomano {
 		String numeroRomanoDevuelto = "";
 		Romano romano = Romano.crearRomano();
 		//act
-		numeroRomanoDevuelto = romano.convertirArabigosEnRomanos(numeroArabigo);
+		numeroRomanoDevuelto = romano.convertirArabigo(numeroArabigo);
 		//assert
 		assertEquals(numeroRomanoEsperado,numeroRomanoDevuelto);
 	}
@@ -55,7 +55,7 @@ public class PruebasRomano {
 		String numeroRomanoDevuelto = "";	
 		Romano romano = Romano.crearRomano();
 		//act
-		numeroRomanoDevuelto = romano.convertirArabigosEnRomanos(numeroArabigo);
+		numeroRomanoDevuelto = romano.convertirArabigo(numeroArabigo);
 		//assert
 		assertEquals(numeroRomanoEsperado,numeroRomanoDevuelto);
 	}
@@ -68,7 +68,7 @@ public class PruebasRomano {
 		String numeroRomanoDevuelto = "";	
 		Romano romano = Romano.crearRomano();
 		//act
-		numeroRomanoDevuelto = romano.convertirArabigosEnRomanos(numeroArabigo);
+		numeroRomanoDevuelto = romano.convertirArabigo(numeroArabigo);
 		//assert
 		assertEquals(numeroRomanoEsperado,numeroRomanoDevuelto);
 	}

@@ -3,12 +3,13 @@ package interfaz;
 import java.util.Scanner;
 
 import dominio.Romano;
-import dominio.ServiciosConversionArabigosARomanos;
+import dominio.ConversionArabigo;
 
 public class ConsolaConvertirArabigosEnRomanos {
 	public static void main(String[] args) {
 		
-		ServiciosConversionArabigosARomanos serviciosConversionArabigosARomano = Romano.crearRomano();
+		ConversionArabigo serviciosConversionArabigosARomano = Romano.crearRomano();
+		
 		String romano = "";
 		int arabigo = 0;
 		boolean control = true;
@@ -33,7 +34,7 @@ public class ConsolaConvertirArabigosEnRomanos {
 	        	}
 	        	else if(serviciosConversionArabigosARomano.esNumeroArabigo(entradaTeclado)){
 	        		arabigo = Integer.parseInt(entradaTeclado);
-	                romano = serviciosConversionArabigosARomano.convertirArabigosEnRomanos(arabigo);
+	                romano = serviciosConversionArabigosARomano.convertirArabigo(arabigo);
 	                System.out.println ("Entrada recibida por teclado es: " + entradaTeclado +"\n" + "Romano: " + romano+"\n");
 	                System.out.println ("=======================================");
 	        	}
